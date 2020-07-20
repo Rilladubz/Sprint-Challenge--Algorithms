@@ -11,6 +11,8 @@ a)  a = 0
       a = a + n * n
 ```
 
+The run time of a is O(n). Since the while loop is a loop the size
+of n will dictate the number of operations proportional to the size of the input.
 
 ```
 b)  sum = 0
@@ -21,6 +23,9 @@ b)  sum = 0
         sum += 1
 ```
 
+The runtime of b is polynomial aka O(n^c) in this instance O(n^2)
+Since the size n has to run through the loop twice in the for & while loop the space/time complexity will grow faster than the size of n. This is not optimal.
+
 ```
 c)  def bunnyEars(bunnies):
       if bunnies == 0:
@@ -28,6 +33,8 @@ c)  def bunnyEars(bunnies):
 
       return 2 + bunnyEars(bunnies-1)
 ```
+
+The run time of c is O(n) in this case since the recursive call only is recurssing and taking 1 away from bunnies if it were used in fibonacci it would be O(2^n) but this is simply returning 2 minus the size of n in a fashion similar to a loop.
 
 ## Exercise II
 
